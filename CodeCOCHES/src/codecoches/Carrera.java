@@ -86,14 +86,17 @@ public class Carrera {
         
       
   public void mostrarPilotos(){
+      System.out.println("____PILOTOS____");
+      System.out.println("");
       for (int i = 0; i < pilotos.length; i++) {
           if (pilotos[i]!=null) {                   
-               System.out.println(pilotos[i]);
+               System.out.println(""+(i+1)+" - "+pilotos[i].toString());
              }
           else{
               System.out.println("No hay coches");
           }
       }
+      System.out.println("_______________");
   }         
 
     public String getNombre() {

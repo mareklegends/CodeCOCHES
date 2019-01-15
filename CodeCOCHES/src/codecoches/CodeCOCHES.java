@@ -21,7 +21,7 @@ public class CodeCOCHES {
         
        a.añadirPiloto(nobot);
         
-        a.añadirBots();
+       // a.añadirBots();
         
          System.out.println("-----------------------");
         

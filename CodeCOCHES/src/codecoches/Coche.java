@@ -27,6 +27,12 @@ public class Coche {
         this.kmrecorridos=0;
     }
 
+    @Override
+    public String toString() {
+        return "Nombre "+nombrepiloto+" Dorsal "+dorsal+"";
+    }
+    
+
     public String getNombrepiloto() {
         return nombrepiloto;
     }
