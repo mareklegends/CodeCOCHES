@@ -21,6 +21,7 @@ public class CodeCOCHES {
         
        a.añadirPiloto(nobot);
         
+       // un buen bucle que peta el programa
        // a.añadirBots();
         
          System.out.println("-----------------------");
