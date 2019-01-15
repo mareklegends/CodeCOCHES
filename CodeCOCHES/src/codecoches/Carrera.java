@@ -68,8 +68,9 @@ public class Carrera {
                 
                         Coche bot = new Coche(nbot, nramdomfimal, 10);
                         pilotos[i]=bot;
+                        System.out.println(">>>>>> Bot añadido ");
                         rellenado=true;
-                        break;
+                        
                 
                    }
                    
@@ -78,7 +79,7 @@ public class Carrera {
            }while(rellenado!=true);
             
         } 
-        System.out.println(">>>> Bots añadidos ");
+        System.out.println(">>>> Totos los bots añadidos ");
     }
     
     
@@ -86,10 +87,12 @@ public class Carrera {
       
   public void mostrarPilotos(){
       for (int i = 0; i < pilotos.length; i++) {
-          if (pilotos[i]!=null) {
-                   
-          System.out.println(pilotos[i]);
+          if (pilotos[i]!=null) {                   
+               System.out.println(pilotos[i]);
              }
+          else{
+              System.out.println("No hay coches");
+          }
       }
   }         
 
