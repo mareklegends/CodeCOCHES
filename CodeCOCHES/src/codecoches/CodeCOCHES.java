@@ -11,9 +11,11 @@ public class CodeCOCHES {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Carrera a = new Carrera("CarreraCAR", 10);
+        Carrera a = new Carrera("CarreraCAR", 10);
         
-        Coche nobot = new Coche("Marek", 26, 10);
+        Coche nobot = new Coche("Marcos", 26, 10);
+        
+        System.out.println("");
         
        a.añadirPiloto(nobot);
         

@@ -16,12 +16,10 @@ public class Carrera {
     public Carrera(String nombre, int distanciacarrera) {
         this.nombre = nombre;
         this.distanciacarrera = distanciacarrera;
-        
-    }
-
-    public Carrera() {
         pilotos = new Coche[5];
     }
+
+ 
     
 
     public void añadirPiloto(Coche nobot){
@@ -70,6 +68,7 @@ public class Carrera {
                 
                         Coche bot = new Coche(nbot, nramdomfimal, 10);
                         pilotos[i]=bot;
+                        System.out.println(">>>> Bot añadido ");
                         break;
                 
                    }
