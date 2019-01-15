@@ -88,7 +88,7 @@ public class Carrera {
       for (int i = 0; i < pilotos.length; i++) {
           if (pilotos[i]!=null) {
                    
-          System.out.println(i+""+pilotos[i]);
+          System.out.println(pilotos[i]);
              }
       }
   }         
