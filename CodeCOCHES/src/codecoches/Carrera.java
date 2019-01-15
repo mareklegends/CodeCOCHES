@@ -36,49 +36,44 @@ public class Carrera {
      
     
     public void añadirBots(){        
-        boolean encontrado = false;
+        boolean encontrado;
         boolean rellenado = false;
-        int nramdomfimal=0;
-  
-        //Sacar dorsal
+        int dorsal, total=4;
+        String[] nomramdom = {"mango", "uva", "pera", "manzana", "melon", "sandia", "platano", "piña"};
+      
         
+           
         do{
         Random r = new Random();
-        int nramdom = r.nextInt(4)+1;
-        for (int i = 1; i < pilotos.length; i++) {
-            if (pilotos[i]!=null && pilotos[i].getDorsal()!=nramdom) { 
-                encontrado = true;
-                nramdomfimal=nramdom;
-                break;
-            } 
-        }   
-        }while(encontrado!=true);
+        int nramdom2 = r.nextInt(6)+1;
+        String nbot=nomramdom[nramdom2];
+
+          //Sacar dorsal
         
-        if (encontrado==true) {
-            
             do{
-            Random r = new Random();
-            int nramdom2 = r.nextInt(6)+1;
-            String[] nomramdom = {"mango", "uva", "pera", "manzana", "melon", "sandia", "platano", "piña"};
-            String nbot=nomramdom[nramdom2];
-            
+                encontrado=false;
+                dorsal = r.nextInt(4)+1;
+                for (int i = 1; i < pilotos.length; i++) {
+                    if (pilotos[i]!=null && pilotos[i].getDorsal()==dorsal) { 
+                        encontrado = true;
+                        break;
+                    } 
+                }   
+            }while(encontrado==true);
+
             for (int i = 1; i < pilotos.length; i++) {
-                
                    if (pilotos[i]==null) { 
-                
-                        Coche bot = new Coche(nbot, nramdomfimal, 10);
+                        Coche bot = new Coche(nbot, dorsal, distanciacarrera);
                         pilotos[i]=bot;
                         System.out.println(">>>>>> Bot añadido ");
-                        rellenado=true;
-                        
-                
+                        total--;
+                        break;
                    }
-                   
             }
+
+       }while(total>0);
             
-           }while(rellenado!=true);
-            
-        } 
+        
         System.out.println(">>>> Totos los bots añadidos ");
     }
     

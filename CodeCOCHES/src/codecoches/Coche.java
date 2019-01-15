@@ -29,7 +29,7 @@ public class Coche {
 
     @Override
     public String toString() {
-        return "Nombre "+nombrepiloto+" Dorsal "+dorsal+"";
+        return "Nombre: "+nombrepiloto+" Dorsal: "+dorsal+"";
     }
     
 
