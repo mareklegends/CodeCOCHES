@@ -68,7 +68,7 @@ public class Carrera {
                 
                         Coche bot = new Coche(nbot, nramdomfimal, 10);
                         pilotos[i]=bot;
-                        System.out.println(">>>> Bot añadido ");
+                        rellenado=true;
                         break;
                 
                    }
@@ -78,6 +78,7 @@ public class Carrera {
            }while(rellenado!=true);
             
         } 
+        System.out.println(">>>> Bots añadidos ");
     }
     
     
@@ -91,6 +92,10 @@ public class Carrera {
              }
       }
   }         
+
+    public String getNombre() {
+        return nombre;
+    }
       
         
     

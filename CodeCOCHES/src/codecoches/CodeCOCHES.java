@@ -15,11 +15,15 @@ public class CodeCOCHES {
         
         Coche nobot = new Coche("Marcos", 26, 10);
         
-        System.out.println("");
+        System.out.println("-----------------------");
+        System.out.println(a.getNombre());
+         System.out.println("-----------------------");
         
        a.añadirPiloto(nobot);
         
         a.añadirBots();
+        
+         System.out.println("-----------------------");
         
         a.mostrarPilotos();
         
